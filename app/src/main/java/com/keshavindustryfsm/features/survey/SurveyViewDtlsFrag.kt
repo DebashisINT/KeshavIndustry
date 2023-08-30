@@ -251,7 +251,7 @@ class SurveyViewDtlsFrag: BaseFragment() {
         var fileName = "FTS" + "_" + survey_id
         fileName = fileName.replace("/", "_")
 
-        val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() + "/demoApp/SURVEYDETALIS/"
+        val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() + "/keshavindustryfsmApp/SURVEYDETALIS/"
 
         val dir = File(path)
         if (!dir.exists()) {

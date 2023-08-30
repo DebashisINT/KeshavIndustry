@@ -7648,8 +7648,8 @@ class LogoutSyncFragment : BaseFragment(), View.OnClickListener {
         /* code off for for Timber Log Introduced
         if(Pref.LogoutWithLogFile){
             try{
-                val filesForZip: Array<String> = arrayOf(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xdemologsample/log").path)
-                ZipOutputStream(BufferedOutputStream(FileOutputStream(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xdemologsample/log.zip").path))).use { out ->
+                val filesForZip: Array<String> = arrayOf(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xkeshavindustryfsmlogsample/log").path)
+                ZipOutputStream(BufferedOutputStream(FileOutputStream(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xkeshavindustryfsmlogsample/log.zip").path))).use { out ->
                     for (file in filesForZip) {
                         FileInputStream(file).use { fi ->
                             BufferedInputStream(fi).use { origin ->
@@ -7663,7 +7663,7 @@ class LogoutSyncFragment : BaseFragment(), View.OnClickListener {
 
                 val addReqData = AddLogReqData()
                 addReqData.user_id = Pref.user_id
-                val fileUrl = Uri.parse(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xdemologsample/log.zip").path);
+                val fileUrl = Uri.parse(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xkeshavindustryfsmlogsample/log.zip").path);
                 val file = File(fileUrl.path)
                 if (!file.exists()) {
                     //checkToCallActivity()

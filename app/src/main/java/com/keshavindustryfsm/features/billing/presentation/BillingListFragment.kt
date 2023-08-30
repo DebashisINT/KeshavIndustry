@@ -224,7 +224,7 @@ class BillingListFragment : BaseFragment(), View.OnClickListener {
         var fileName = "FTS" + "_" + obj.bill_id
         fileName = fileName.replace("/", "_")
 
-        val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() + "/demoApp/INVOICEDETALIS/"
+        val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() + "/keshavindustryfsmApp/INVOICEDETALIS/"
 
         val dir = File(path)
         if (!dir.exists()) {

@@ -21,8 +21,8 @@ class NetworkConstant {
         var BASE_URL = "http://fts.indusnettechnologies.com:7027/API/"
         var ADD_SHOP_BASE_URL = "http://fts.indusnettechnologies.com:7027/"
 
-//        var BASE_URL = "http://3.7.30.86:8072/API/"
-//        var ADD_SHOP_BASE_URL = "http://3.7.30.86:8072/"
+        //var BASE_URL = "http://3.7.30.86:8072/API/"
+        //var ADD_SHOP_BASE_URL = "http://3.7.30.86:8072/"
 
 
         //var BASE_URL = "http://localhost:8081/API/"
@@ -50,7 +50,7 @@ class NetworkConstant {
 //         var BASE_URL="http://hrms.indusnettechnologies.com:7025/API/"
 //         var ADD_SHOP_BASE_URL="http://hrms.indusnettechnologies.com:7025"
 
-        /*demo INTERNAL*/
+        /*keshavindustryfsm INTERNAL*/
 //        var BASE_URL="http://geapl.breezeerp.in:8083/API/"
 //        var ADD_SHOP_BASE_URL="http://geapl.breezeerp.in:8083/"
 

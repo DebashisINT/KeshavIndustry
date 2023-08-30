@@ -12,3 +12,4 @@ data class FinalOrderData(var product_id:String="",var product_name:String="",va
                           var category_id:String="",var category:String="",var watt_id:String="",var watt:String="",var product_mrp_show:String="",var product_discount_show:String="",var Qty_per_Unit : Double =0.0,var Scheme_Qty : Double =0.0,var Effective_Rate : Double =0.0)
 data class FinalOrderDataWithShopID(var shop_id:String , var ordList:ArrayList<FinalOrderData>)
 
+

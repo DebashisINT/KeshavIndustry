@@ -4083,9 +4083,9 @@ class DashboardActivity : BaseActivity(), View.OnClickListener, BaseNavigation, 
         try {
             val shareIntent = Intent(Intent.ACTION_SEND)
 //        val phototUri = Uri.parse(localAbsoluteFilePath)
-            //val fileUrl = Uri.parse(File(Environment.getExternalStorageDirectory(), "xdemologsample/log").path);
+            //val fileUrl = Uri.parse(File(Environment.getExternalStorageDirectory(), "xkeshavindustryfsmlogsample/log").path);
             //27-09-2021
-//            val fileUrl = Uri.parse(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xdemologsample/log").path);
+//            val fileUrl = Uri.parse(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xkeshavindustryfsmlogsample/log").path);
 //            val fileUrl = Uri.parse(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
 //                BuildConfig.APPLICATION_ID+"/Log/Fsmlog.html").path);
             var currentDBPath="/data/user/0/com.keshavindustryfsm/files/Fsmlog.html"
@@ -4122,8 +4122,8 @@ class DashboardActivity : BaseActivity(), View.OnClickListener, BaseNavigation, 
             intent.putExtra(Intent.EXTRA_SUBJECT, "Here are some files.")
             intent.type = "image/*"
 
-            val fileUrl1 = Uri.parse(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xdemologsample/log").path);
-            val fileUrl2 = Uri.parse(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xdemologsample/log.bak.1").path);
+            val fileUrl1 = Uri.parse(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xkeshavindustryfsmlogsample/log").path);
+            val fileUrl2 = Uri.parse(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xkeshavindustryfsmlogsample/log.bak.1").path);
             val files = ArrayList<Uri>()
             if (!File(fileUrl1.path).exists()) {
                 return
@@ -12719,7 +12719,7 @@ class DashboardActivity : BaseActivity(), View.OnClickListener, BaseNavigation, 
 
     fun generateNoteOnSD(context: Context?, sFileName: String?, sBody: String?) {
         try {
-            val root =  File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xdemologsample/log" + ".txt")
+            val root =  File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xkeshavindustryfsmlogsample/log" + ".txt")
             if (!root.exists()) {
                 root.mkdirs()
             }
@@ -12743,7 +12743,7 @@ class DashboardActivity : BaseActivity(), View.OnClickListener, BaseNavigation, 
 //        }
         val bytes = ByteArrayOutputStream()
 //        bm!!.compress(Bitmap.CompressFormat.JPEG, 90, bytes)
-        var destination = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xdemologsample/log")
+        var destination = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xkeshavindustryfsmlogsample/log")
         val fo: FileOutputStream
         val fo1:FileWriter
         try {

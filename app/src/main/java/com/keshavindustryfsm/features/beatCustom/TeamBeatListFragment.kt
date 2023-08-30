@@ -217,7 +217,7 @@ class TeamBeatListFragment : BaseFragment(), DatePickerDialog.OnDateSetListener,
         val time = System.currentTimeMillis()
         var fileName = "BeatShare" +  "_" + time
         fileName=fileName.replace("/", "_")
-        val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString()+"/demoApp/BEAT/"
+        val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString()+"/keshavindustryfsmApp/BEAT/"
 
         val dir = File(path)
         if (!dir.exists()) {

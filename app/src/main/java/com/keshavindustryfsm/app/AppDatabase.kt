@@ -67,7 +67,7 @@ import com.keshavindustryfsm.features.taskManagement.model.TaskManagmentEntity
         ShopDtlsTeamEntity::class, CollDtlsTeamEntity::class, BillDtlsTeamEntity::class, OrderDtlsTeamEntity::class,
         TeamAllShopDBModelEntity::class, DistWiseOrderTblEntity::class, NewGpsStatusEntity::class,ShopExtraContactEntity::class,ProductOnlineRateTempEntity::class, TaskManagmentEntity::class,
     VisitRevisitWhatsappStatus::class),
-        version = 25, exportSchema = false)
+        version = 1, exportSchema = false)
 @TypeConverters(DateConverter::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun addShopEntryDao(): AddShopDao
@@ -234,8 +234,7 @@ abstract class AppDatabase : RoomDatabase() {
             INSTANCE = null
         }
 
-
-    }
+   }
 
 
 //}

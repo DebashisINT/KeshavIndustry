@@ -364,7 +364,7 @@ class ShopDamageProductListFrag: BaseFragment(), DatePickerDialog.OnDateSetListe
         var fileName = "FTS" + "_" + obj.breakage_number
         fileName = fileName.replace("/", "_")
 
-        val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() + "/demoApp/BREAKAGEDETALIS/"
+        val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() + "/keshavindustryfsmApp/BREAKAGEDETALIS/"
 
         val dir = File(path)
         if (!dir.exists()) {

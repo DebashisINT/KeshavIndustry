@@ -30,7 +30,7 @@
                 android:drawablePadding="@dimen/_8sdp"
                 android:drawableStart="@drawable/ic_dashboard_my_order_icon_select"
                 android:gravity="center"
-                android:text="@string/demo_login"
+                android:text="@string/keshavindustryfsm_login"
                 android:visibility="gone"
                 android:textColor="@color/login_txt_color"
                 android:textSize="@dimen/_12sdp" />
@@ -63,7 +63,7 @@
                 android:layout_centerVertical="true"
                 android:drawablePadding="@dimen/_8sdp"
                 android:gravity="center"
-                android:text="@string/demo_time"
+                android:text="@string/keshavindustryfsm_time"
                 android:textColor="@color/login_txt_color"
                 android:textSize="@dimen/_12sdp" />
 
@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:drawablePadding="@dimen/_8sdp"
                 android:drawableStart="@drawable/ic_dashboard_add_shop_icon_select"
-                android:text="@string/demo_location"
+                android:text="@string/keshavindustryfsm_location"
                 android:textColor="@color/login_txt_color"
                 android:textSize="@dimen/_12sdp" />
 
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:gravity="center"
-                android:text="@string/demo_shops"
+                android:text="@string/keshavindustryfsm_shops"
                 android:textColor="@color/login_txt_color"
                 android:textSize="@dimen/_12sdp" />
             <View

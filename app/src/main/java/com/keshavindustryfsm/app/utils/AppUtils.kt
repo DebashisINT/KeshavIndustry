@@ -223,7 +223,7 @@ class AppUtils {
             //val storageDir = File(Environment.getExternalStorageDirectory().toString()
                     //+ File.separator + "fieldtrackingsystem" + File.separator)
             //27-09-2021
-            val storageDir = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() + File.separator + "demoApp/fieldtrackingsystem" + File.separator)
+            val storageDir = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() + File.separator + "keshavindustryfsmApp/fieldtrackingsystem" + File.separator)
             storageDir.mkdirs()
 
             // Save a file: path for use with ACTION_VIEW intents

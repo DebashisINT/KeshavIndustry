@@ -57,7 +57,7 @@ import androidx.core.content.FileProvider;
 // 1.0 REV 0026445: Order QR code can't share in whatsapp, its showing "The file format is not supported"
 public class FTStorageUtils {
 
-    private static String APP_FOLDERNAME = "demoApp/FTS";
+    private static String APP_FOLDERNAME = "keshavindustryfsmApp/FTS";
     private static String folderPath;
     public static Uri IMG_URI = null;
     private static final int EOF = -1;

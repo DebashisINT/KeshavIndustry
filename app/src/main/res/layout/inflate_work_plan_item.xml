@@ -122,7 +122,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/shop_name_TV"
-                        android:text="@string/dashboard_demo_address"
+                        android:text="@string/dashboard_keshavindustryfsm_address"
                         android:textColor="@color/login_txt_color"
                         android:textSize="@dimen/_9sdp"
                         android:layout_marginTop="@dimen/_2sdp"/>-->
@@ -155,7 +155,7 @@
                             android:id="@+id/shop_address_TV"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/dashboard_demo_address"
+                            android:text="@string/dashboard_keshavindustryfsm_address"
                             android:textColor="@color/login_txt_color"
                             android:textSize="@dimen/_9sdp"
                             android:layout_marginTop="@dimen/_2sdp"

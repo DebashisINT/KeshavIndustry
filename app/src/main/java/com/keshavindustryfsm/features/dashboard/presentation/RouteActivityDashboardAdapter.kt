@@ -64,7 +64,7 @@ class RouteActivityDashboardAdapter(context: Context, userLocationDataEntity: Li
 
 
 //            itemView.myshop_name_TV.setText(context.getString(R.string.name_colon)+" "+context.getString(R.string.capital_electronics))
-//            itemView.myshop_address_TV.setText(context.getString(R.string.demo_address))
+//            itemView.myshop_address_TV.setText(context.getString(R.string.keshavindustryfsm_address))
 
 //            itemView.map_IV.findViewById<ImageView>(R.id.map_IV).setOnClickListener(View.OnClickListener {
 //                listener.mapClick()

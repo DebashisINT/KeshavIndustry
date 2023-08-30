@@ -464,9 +464,6 @@ class OrderProductListFrag : BaseFragment(), View.OnClickListener {
                             progrwss_wheel.stopSpinning()
                             ToasterMiddle.msgShort(mContext, "No online rate found.")
                         }
-                    }else{
-                        ToasterMiddle.msgShort(mContext, "No online rate found.")
-
                     }
                 }, { error ->
                     error.printStackTrace()

@@ -157,6 +157,7 @@ import java.io.*
 import java.nio.channels.FileChannel
 import java.util.*
 import java.util.concurrent.ExecutionException
+import kotlin.collections.ArrayList
 
 
 /**Permission NameDISABLE KEYGUARD Status
@@ -1146,7 +1147,16 @@ class LoginActivity : BaseActivity(), View.OnClickListener, LocationListener {
                                 }
                             } else {
                                /* progress_wheel.stopSpinning()*/
-                                checkToCallAreaListApi()
+                                if(AppDatabase.getDBInstance()?.productListDao()?.getAll()!!.isEmpty()){
+                                    checkToCallAreaListApi()
+                                }else{
+                                    AppDatabase.getDBInstance()?.productRateDao()?.deleteAll()
+                                    val rateList: ArrayList<ProductRateEntity> = AppDatabase.getDBInstance()?.productRateDao()?.getAllBlank() as ArrayList<ProductRateEntity>
+                                    AppDatabase.getDBInstance()?.productRateDao()?.insertAll(rateList)
+                                    checkToCallAreaListApi()
+                                }
+
+                                //checkToCallAreaListApi()
                             }
 
                         }, { error ->
@@ -4117,9 +4127,9 @@ class LoginActivity : BaseActivity(), View.OnClickListener, LocationListener {
         try {
             val shareIntent = Intent(Intent.ACTION_SEND)
 //        val phototUri = Uri.parse(localAbsoluteFilePath)
-            //val fileUrl = Uri.parse(File(Environment.getExternalStorageDirectory(), "xdemologsample/log").path);
+            //val fileUrl = Uri.parse(File(Environment.getExternalStorageDirectory(), "xkeshavindustryfsmlogsample/log").path);
             //27-09-2021
-//            val fileUrl = Uri.parse(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xdemologsample/log").path);
+//            val fileUrl = Uri.parse(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xkeshavindustryfsmlogsample/log").path);
             var currentDBPath="/data/user/0/com.keshavindustryfsm/files/Fsmlog.html"
             val fileUrl = Uri.parse(File(currentDBPath, "").path);
 

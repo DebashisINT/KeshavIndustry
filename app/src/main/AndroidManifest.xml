@@ -5,6 +5,9 @@
 
     <uses-sdk />
 
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"></uses-permission>
+
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  <!--mantis 26316 saheli v 4.1.6 09-06-2023-->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -150,7 +153,7 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.google.android.exoplayer.demo.action.VIEW" />
+                <action android:name="com.google.android.exoplayer.keshavindustryfsm.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 

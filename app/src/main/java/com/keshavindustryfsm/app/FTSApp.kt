@@ -102,8 +102,8 @@ class FTSApp : MultiDexApplication() {
                 .build()
 
             val androidPrinter = AndroidPrinter()             // Printer that print the log using android.util.Log
-            //val filePrinter = FilePrinter.Builder(File(getExternalStorageDirectory(), "xdemologsample").path)// Printer that print the log to the file system
-            val filePrinter = FilePrinter.Builder(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xdemologsample").path)// Printer that print the log to the file system
+            //val filePrinter = FilePrinter.Builder(File(getExternalStorageDirectory(), "xkeshavindustryfsmlogsample").path)// Printer that print the log to the file system
+            val filePrinter = FilePrinter.Builder(File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "xkeshavindustryfsmlogsample").path)// Printer that print the log to the file system
                 // Specify the path to save log file
 //                .fileNameGenerator(ChangelessFileNameGenerator())        // Default: ChangelessFileNameGenerator("log")
                 //.backupStrategy(NeverBackupStrategy())             // Default: FileSizeBackupStrategy(1024 * 1024)
