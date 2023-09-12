@@ -60,20 +60,20 @@
                             android:id="@+id/iv_task_icon"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_others_icon"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="@dimen/_2sdp"/>
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:src="@drawable/ic_others_icon" />
 
                         <com.keshavindustryfsm.widgets.AppCustomTextView
                             android:id="@+id/avg_order_val_TV"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
                             android:layout_below="@+id/iv_task_icon"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
                             android:paddingLeft="@dimen/_5sdp"
                             android:paddingRight="@dimen/_5sdp"
                             android:text="Pending"
-                            android:gravity="center_horizontal"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_10sdp" />
 

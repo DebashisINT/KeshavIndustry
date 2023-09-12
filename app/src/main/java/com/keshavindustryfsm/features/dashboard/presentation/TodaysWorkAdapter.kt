@@ -15,6 +15,7 @@ import com.keshavindustryfsm.app.Pref
 import com.keshavindustryfsm.app.domain.SelectedRouteShopListEntity
 import com.keshavindustryfsm.app.domain.SelectedWorkTypeEntity
 import com.keshavindustryfsm.app.utils.AppUtils
+import com.keshavindustryfsm.app.utils.Toaster
 import kotlinx.android.synthetic.main.inflate_work_plan_item.view.*
 
 
@@ -133,6 +134,11 @@ class TodaysWorkAdapter(context: Context, list: ArrayList<SelectedWorkTypeEntity
                     itemView.rl_work_plan.visibility = View.VISIBLE
                     itemView.tv_route.visibility = View.GONE
                     itemView.fl_dot.visibility = View.GONE
+
+                    itemView.rl_work_plan.setOnClickListener {
+                        Toaster.msgLong(context,"Your todays attendance agenda is ${list[adapterPosition].Descrpton}. Thanks.")
+                    }
+
                 }
 
             }
