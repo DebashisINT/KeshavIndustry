@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.keshavindustryfsm">
+    package="com.keshavindustryfsmfsm">
 
     <uses-sdk />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
 
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"></uses-permission>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="ReservedSystemPermission" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  <!--mantis 26316 saheli v 4.1.6 09-06-2023-->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -154,7 +164,7 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.google.android.exoplayer.keshavindustryfsm.action.VIEW" />
+                <action android:name="com.google.android.exoplayer.keshavindustryfsmfsm.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
@@ -186,6 +196,30 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
+
+
+            <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/facebook_app_id" />
+
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -234,7 +268,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.keshavindustryfsm.provider"
+            android:authorities="com.keshavindustryfsmfsm.provider"
             android:exported="false"
             android:grantUriPermissions="true">
         <meta-data
@@ -252,7 +286,7 @@
         <receiver
             android:name=".features.location.GeofenceBroadcastReceiver"
             android:enabled="true"
-            android:exported="false" />
+            android:exported="true" />
         <receiver
             android:name=".features.location.RestartBroadcast"
             android:enabled="true"

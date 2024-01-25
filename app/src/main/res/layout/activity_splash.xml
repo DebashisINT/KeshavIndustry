@@ -8,22 +8,22 @@
 
     <ImageView
         android:id="@+id/logo_new"
-        android:layout_width="@dimen/_165sdp"
-        android:layout_height="@dimen/_98sdp"
+        android:layout_width="@dimen/_195sdp"
+        android:layout_height="@dimen/_90sdp"
         android:src="@drawable/breezelogo"
         android:layout_marginTop="@dimen/_170sdp"
         android:layout_centerHorizontal="true" />
 
-    <com.keshavindustryfsm.widgets.AppCustomTextView
+    <com.keshavindustryfsmfsm.widgets.AppCustomTextView
         android:id="@+id/Logo_name_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo_new"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:visibility="gone"
         android:layout_marginTop="@dimen/_10sdp"
         android:gravity="center|center_horizontal"
+        android:visibility="gone"
         android:text="@string/name_filed_managenent_system"
         android:textColor="#287fb2"
         android:textSize="@dimen/_12sdp"

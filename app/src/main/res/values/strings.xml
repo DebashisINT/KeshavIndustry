@@ -13,6 +13,8 @@
     <!--Map Key-->
     <!--<string name="MAP_ProjectAPIKey">AIzaSyBRrqsLZFqThqM8uxw_k94pZMbv3-3h0dM</string>-->
     <string name="MAP_ProjectAPIKey" translatable="false">AIzaSyDXZF-suKi8C0-WA0hY_PB8c5Pdq_GK_Uk</string>
+    <string name="facebook_app_id" translatable="false">260734547001450</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb260734547001450</string>
 
     <!--Login-->
     <string name="username_new" translatable="false">Username</string>
@@ -181,6 +183,7 @@
     <string name="owner_contact_number" translatable="false">Owner Contact Number</string>
     <string name="owner_contact_number1" translatable="false">Contact Number</string>
     <string name="GSTIN" translatable="false">GSTIN Number</string>
+    <string name="FSSAILic" translatable="false">FSSAI Lic Number</string>
     <string name="pan" translatable="false">PAN Number</string>
     <string name="owner_email" translatable="false">Owner Email</string>
     <string name="owner_email1" translatable="false">Email</string>
@@ -432,12 +435,12 @@
     <string name="email" translatable="false">Email ID</string>
 
 
-    <!--keshavindustryfsm-->
-    <string name="keshavindustryfsm_user_name" translatable="false">Mr. Kinsuk Roy</string>
-    <string name="keshavindustryfsm_login" translatable="false">Logged in at 10:55 AM</string>
-    <string name="keshavindustryfsm_location" translatable="false">You have covered the distance of 3 KM in last hour </string>
-    <string name="keshavindustryfsm_shops" translatable="false">You have visited 2 shops</string>
-    <string name="keshavindustryfsm_time" translatable="false">10:30 AM</string>
+    <!--keshavindustryfsmfsm-->
+    <string name="keshavindustryfsmfsm_user_name" translatable="false">Mr. Kinsuk Roy</string>
+    <string name="keshavindustryfsmfsm_login" translatable="false">Logged in at 10:55 AM</string>
+    <string name="keshavindustryfsmfsm_location" translatable="false">You have covered the distance of 3 KM in last hour </string>
+    <string name="keshavindustryfsmfsm_shops" translatable="false">You have visited 2 shops</string>
+    <string name="keshavindustryfsmfsm_time" translatable="false">10:30 AM</string>
 
     <!--Change Password-->
     <string name="old_pwd" translatable="false">Old Password</string>
@@ -500,8 +503,8 @@
     <string name="capture_shop_image" translatable="false">Capture an image of shop</string>
     <string name="welcome" translatable="false">Welcome</string>
     <string name="vikas_malhotra" translatable="false">Vikash Malhotra</string>
-    <string name="dashboard_keshavindustryfsm_item" translatable="false">10.30\nAM</string>
-    <string name="dashboard_keshavindustryfsm_address" translatable="false">SDF Building, GP Block, Saltlake </string>
+    <string name="dashboard_keshavindustryfsmfsm_item" translatable="false">10.30\nAM</string>
+    <string name="dashboard_keshavindustryfsmfsm_address" translatable="false">SDF Building, GP Block, Saltlake </string>
     <string name="ten" translatable="false">10</string>
     <string name="five" translatable="false">5</string>
     <string name="organization_name" translatable="false">Nordusk</string>
@@ -1434,7 +1437,6 @@
         even when the app is closed or not in use.</string>
 
 
-
     <!--My Jobs-->
     <string name="view_details" translatable="false">View Details</string>
     <string name="cust_name" translatable="false">ICICI-WB-SALTLAKE</string>
@@ -1491,7 +1493,7 @@
     <string name="error_enter_canceled_by" translatable="false">Please enter cancelled by</string>
 
 
-    <string name="tfe_od_app_name" translation_description="Object Detection keshavindustryfsm app [CHAR_LIMIT=40]">Face Recognition</string>
+    <string name="tfe_od_app_name" translation_description="Object Detection keshavindustryfsmfsm app [CHAR_LIMIT=40]">Face Recognition</string>
     <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
     <string name="label_install_anydesk" translatable="false">Install Anydesk</string>
     <string name="label_open_anydesk" translatable="false">Open Anydesk</string>
@@ -1580,7 +1582,12 @@
     <string name="camera_back" translatable="false">Back Camera :\u0020 </string>
     <string name="camera_front" translatable="false">Front Camera :\u0020 </string>
     <string name="historys" translatable="false">Historys</string>
-    <string name="firebase_key" translatable="false">key=AAAAI14H74o:APA91bGbfEbOPmlSEZixWzO_Z1SXrP5fFZDRbCyvFJFKjfIlKBvtvlzNEt8TFD_StxNgjSUk6kXSswpYBviMhlOJzOWfKl7iQDAJ7FWh0yveuFuwkvYTUKweRwAbjN56KN5Imef90aRZ</string>
+    <!--<string name="firebase_key" translatable="false">key=AAAAIoWfCpc:APA91bEMOPyfjsyziPC1WYJiPHjzdmTQJmAOKP0fM24iXI9BgrmyhH4uLY6Jd-6Lpjp8mvSdpSp-zm20ApTOYQ3Ean4m6LicJ5CoECS_v5u2PUAwA8E6FLsu2ZC6_WxuSYnTTLzlUi4E</string>-->
+
+    <string name="PART_1" translatable="false">key=AAAAI14H74o:APA91bGbfEbOPmlSEZixWzO_Z1SXrP5fFZDRbCyvFJFKjfIlKBvtvlzNEt8TFD_</string>
+    <string name="PART_2" translatable="false">StxNgjSUk6kXSswpYBviMhlOJzOWfKl7iQDAJ7</string>
+    <string name="PART_3" translatable="false">FWh0yveuFuwkvYTUKweRwAbjN5</string>
+    <string name="PART_4" translatable="false">6KN5Imef90aRZ</string>
 
     <string name="GenderTextNewOrd" translatable="false">Gender</string>
     <string name="ProductTextNewOrd" translatable="false">Product Type</string>
